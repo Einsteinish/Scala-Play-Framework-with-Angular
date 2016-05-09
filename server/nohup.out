@@ -1,0 +1,33 @@
+[0m[[0minfo[0m] [0mLoading project definition from /home/k/TEST/101/angularjs-play-blog-app/server/project[0m
+[0m[[0minfo[0m] [0mSet current project to server (in build file:/home/k/TEST/101/angularjs-play-blog-app/server/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+[[37minfo[0m] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9090
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:207)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:248)
+	at jline.internal.InputStreamReader.read(InputStreamReader.java:261)
+	at jline.internal.InputStreamReader.read(InputStreamReader.java:198)
+	at jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2038)
+	at play.PlayConsoleInteractionMode$$anonfun$waitForKey$1.play$PlayConsoleInteractionMode$$anonfun$$waitEOF$1(PlayInteractionMode.scala:62)
+	at play.PlayConsoleInteractionMode$$anonfun$waitForKey$1$$anonfun$apply$1.apply$mcV$sp(PlayInteractionMode.scala:73)
+	at play.PlayConsoleInteractionMode$$anonfun$doWithoutEcho$1.apply(PlayInteractionMode.scala:80)
+	at play.PlayConsoleInteractionMode$$anonfun$doWithoutEcho$1.apply(PlayInteractionMode.scala:77)
+	at play.PlayConsoleInteractionMode$.withConsoleReader(PlayInteractionMode.scala:57)
+	at play.PlayConsoleInteractionMode$.doWithoutEcho(PlayInteractionMode.scala:77)
+	at play.PlayConsoleInteractionMode$$anonfun$waitForKey$1.apply(PlayInteractionMode.scala:73)
+	at play.PlayConsoleInteractionMode$$anonfun$waitForKey$1.apply(PlayInteractionMode.scala:60)
+	at play.PlayConsoleInteractionMode$.withConsoleReader(PlayInteractionMode.scala:57)
+	at play.PlayConsoleInteractionMode$.waitForKey(PlayInteractionMode.scala:60)
+	at play.PlayConsoleInteractionMode$.waitForCancel(PlayInteractionMode.scala:83)
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3.apply(PlayRun.scala:120)
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3.apply(PlayRun.scala:54)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+[0m[[31mtrace[0m] [0mStack trace suppressed: run [34mlast compile:run[0m for the full output.[0m
+[0m[[31merror[0m] [0m(compile:[31mrun[0m) java.io.IOException: Bad file descriptor[0m
+[0m[[31merror[0m] [0mTotal time: 7 s, completed May 8, 2016 7:40:05 PM[0m
