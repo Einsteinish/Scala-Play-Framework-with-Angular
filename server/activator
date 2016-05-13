@@ -142,7 +142,7 @@ get_mem_opts () {
 
   if [[ "${java_opts}" == *-Xmx* ]] || [[ "${java_opts}" == *-Xms* ]] || [[ "${java_opts}" == *-XX:MaxPermSize* ]] || [[ "${java_opts}" == *-XX:ReservedCodeCacheSize* ]] || [[ "${java_opts}" == *-XX:MaxMetaspaceSize* ]]; then
     # if we detect any of these settings in ${java_opts} we need to NOT output our settings.
-    # The reason is the Xms/Xmx, if they don't line up, cause errors.
+   # The reason is the Xms/Xmx, if they don't line up, cause errors.
     memopts=""
     extmemopts=""
   fi
